@@ -1,0 +1,352 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: white;
+  color: #111;
+}
+
+.container {
+  width: 100%;
+  max-width: 312px;
+
+  margin: 12px auto;
+}
+
+/* ================= TABS ================= */
+
+.tabs {
+  display: flex;
+
+  border-bottom: 1px solid #ddd;
+
+  height: 31px;
+}
+
+.tab {
+  border: none;
+  background: transparent;
+
+  padding: 6px 11px;
+
+  font-size: 10px;
+
+  color: #0645ad;
+
+  cursor: pointer;
+}
+
+.tab.active {
+  color: #333;
+
+  border: 1px solid #ddd;
+  border-bottom: 1px solid white;
+
+  border-radius: 3px 3px 0 0;
+
+  background: white;
+}
+
+/* ================= HEADINGS ================= */
+
+h2 {
+  font-size: 12px;
+  font-weight: 400;
+
+  margin: 11px 0 5px;
+}
+
+/* ================= CARD ================= */
+
+.card {
+  background: #f0efdc;
+
+  border: 1px solid #dddcc8;
+
+  border-radius: 5px;
+
+  padding: 12px;
+}
+
+/* ================= LABEL ================= */
+
+label {
+  display: block;
+
+  font-size: 9px;
+
+  margin-bottom: 5px;
+}
+
+/* ================= SELECT ================= */
+
+select,
+input,
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+
+  border: 1px solid #c8ced4;
+
+  border-radius: 4px;
+
+  background: white;
+
+  outline: none;
+}
+
+.card > select {
+  width: 100%;
+
+  height: 26px;
+
+  padding: 0 9px;
+
+  font-size: 10px;
+
+  margin-bottom: 10px;
+}
+
+/* ================= NUMBER ================= */
+
+.number {
+  display: flex;
+
+  height: 29px;
+
+  margin-bottom: 9px;
+}
+
+.number input {
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 5px 9px;
+
+  font-size: 12px;
+
+  border-radius: 4px 0 0 4px;
+}
+
+.number span {
+  width: 23px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 8px;
+
+  color: #777;
+
+  background: white;
+
+  border: 1px solid #c8ced4;
+  border-left: none;
+
+  border-radius: 0 4px 4px 0;
+}
+
+/* ================= OPERATOR ================= */
+
+.operator {
+  width: 85px !important;
+
+  height: 23px !important;
+
+  margin-bottom: 9px !important;
+
+  font-size: 10px !important;
+
+  padding: 0 7px !important;
+}
+
+/* ================= BUTTONS ================= */
+
+.buttons {
+  display: flex;
+
+  gap: 3px;
+
+  margin: 9px 0;
+}
+
+.buttons button,
+.copy-button {
+  border: none;
+
+  border-radius: 2px;
+
+  padding: 6px 9px;
+
+  font-size: 9px;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+.calculate {
+  background: #198754;
+}
+
+.reset,
+.swap,
+.copy-button {
+  background: #6c757d;
+}
+
+/* ================= RESULT ================= */
+
+.result {
+  display: flex;
+
+  height: 48px;
+
+  margin-bottom: 9px;
+}
+
+.result textarea,
+.result input {
+  flex: 1;
+
+  min-width: 0;
+
+  resize: vertical;
+
+  padding: 7px;
+
+  border-radius: 4px 0 0 4px;
+
+  font-size: 11px;
+}
+
+.result span {
+  width: 23px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 8px;
+
+  color: #777;
+
+  background: white;
+
+  border: 1px solid #c8ced4;
+
+  border-left: none;
+}
+
+.result button {
+  width: 30px;
+
+  border: 1px solid #777;
+
+  background: white;
+
+  border-radius: 0 3px 3px 0;
+
+  font-size: 14px;
+}
+
+.result.small {
+  height: 23px;
+}
+
+.result.small input {
+  font-size: 10px;
+}
+
+/* ================= CHECKBOX ================= */
+
+.checkbox {
+  display: flex;
+
+  align-items: center;
+
+  gap: 3px;
+
+  margin: 3px 0 17px;
+}
+
+.checkbox input {
+  width: 10px;
+  height: 10px;
+
+  margin: 0;
+}
+
+.checkbox label {
+  margin: 0;
+
+  font-size: 9px;
+}
+
+/* ================= STEPS ================= */
+
+.steps {
+  width: 100%;
+
+  height: 27px;
+
+  padding: 5px;
+
+  resize: vertical;
+}
+
+/* ================= CONVERTER ================= */
+
+.converter .card {
+  padding: 12px;
+}
+
+.full-input {
+  width: 100%;
+
+  height: 29px;
+
+  padding: 5px 9px;
+
+  font-size: 10px;
+
+  margin-bottom: 12px;
+}
+
+.converter-result {
+  width: 100%;
+
+  height: 47px;
+
+  resize: vertical;
+
+  padding: 7px;
+
+  margin-bottom: 8px;
+}
+
+.copy-button {
+  display: block;
+}
+
+/* ================= HIDE ================= */
+
+.hidden {
+  display: none;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 350px) {
+  .container {
+    max-width: calc(100% - 20px);
+  }
+}
