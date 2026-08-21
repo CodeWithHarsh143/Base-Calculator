@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   tabConverter.addEventListener("click", () => activateTab("converter"));
 
   // ----------------------------------------------------------
-  // ERROR HELPERS (reusable for both sections)
+  // ERROR HELPERS
   // ----------------------------------------------------------
 
   /**
@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /**
-   * Hide the top-level error banner inside a section.
    * @param {'calculator' | 'converter'} section
    */
   function clearError(section) {
@@ -105,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
   // ----------------------------------------------------------
-  // calcULATOR — DOM references (logic to be added later)
+  // calcULATOR — DOM references
   // ----------------------------------------------------------
   const calc = {
     base: document.getElementById("calc-base"),
@@ -126,7 +125,6 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // Keep the small base indicators next to each input in sync with the
-  // selected base (e.g. "16" when hexadecimal is selected).
   calc.base.addEventListener("change", () => {
     calc.baseIndicators.forEach((el) => {
       el.textContent = calc.base.value;
@@ -362,7 +360,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // ----------------------------------------------------------
-  // CONVERTER — DOM references (logic to be added later)
+  // CONVERTER — DOM references
   // ----------------------------------------------------------
   const conv = {
     input: document.getElementById("conv-input"),
